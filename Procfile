@@ -1,0 +1,1 @@
+web: gunicorn betproject.wsgi --log-file -
