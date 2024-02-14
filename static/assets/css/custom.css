@@ -51,11 +51,16 @@
     color: white;
     font-weight: bold;
     margin-top: 20px;
+    text-align: center;
+}
+.pop-img small{
+    text-align: center;
 }
 .payment{
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+    align-items: flex-start;
 }
 .payment h1, .payment p{
     color: white;
@@ -83,10 +88,16 @@
     }
 }
 @media (max-width:682px) {
-    .payment{
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+
+    .payment h1{
+        font-size: 20px;
+        padding: 0;
+        margin: 0;
+    }
+    .payment p{
+        font-size: 12px;
+        padding: 0;
+        margin: 0;
     }
     .submit{
         flex-direction: column;
@@ -96,9 +107,6 @@
     .submit input{
         margin-bottom: 20px;
     }
-    .bitcoin{
-        margin-top: 20px;
-    }
 }
 @media (max-width:482px) {
     .custom_class{
@@ -106,5 +114,12 @@
     }
     .pop-img img{
         width: 40%;
+    }
+}
+@media (max-width:322px) {
+    .payment{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 }

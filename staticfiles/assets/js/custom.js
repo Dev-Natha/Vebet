@@ -212,3 +212,9 @@ function sendData(inputData, inputId) {
          'display': 'none',
      })
  }
+
+ function showPayment(){
+    $('#pop-id').css({
+        'display': 'flex',
+    })
+ }
